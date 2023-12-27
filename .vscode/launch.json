@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Asus/Desktop/DSA_4th_sem",
-      "program": "c:/Users/Asus/Desktop/DSA_4th_sem/build/Debug/outDebug",
+      "cwd": "c:/Users/Asus/Desktop/DSA_4th_sem/lab_00",
+      "program": "c:/Users/Asus/Desktop/DSA_4th_sem/lab_00/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
