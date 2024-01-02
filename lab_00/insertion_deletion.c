@@ -1,43 +1,43 @@
 #include<stdio.h>
 
-void insertion(char arr[], int m) {
+void insertion(char arr[], int size) {
     int position, value;
     printf("Enter the position in which you want to insert the value:");
     scanf("%d", &position);
     printf("Enter the value you want to insert:");
     scanf(" %c", &value);
 
-    for (int i = m - 1; i >= position; i--) 
+    for (int i = size - 1; i >= position; i--) 
         arr[i + 1] = arr[i];
     arr[position] = value;
-    m++;
+    size++;
 
-    for (int i = 0; i < m; i++) 
+    for (int i = 0; i < size; i++) 
         printf("%c ", arr[i]);
 }
 
-void deletion(char arr[], int m) {
+void deletion(char arr[], int size) {
     int position;
     printf("Enter the position from which you want to delete the value:");
     scanf("%d", &position);
 
-    for (int i = position; i < m - 1; i++) 
+    for (int i = position; i < size - 1; i++) 
         arr[i] = arr[i + 1];
-    m--;
+    size--;
 
-    for (int i = 0; i < m; i++) 
+    for (int i = 0; i < size; i++) 
         printf("%c ", arr[i]);
     
 }
 
 int main() {
-    int m, a;
+    int size, a;
     printf("Enter the size of array:");
-    scanf("%d", &m);
-    char arr[m];
+    scanf("%d", &size);
+    char arr[size];
     printf("Enter the array:");
 
-    for (int i = 0; i < m; i++) {
+    for (int i = 0; i < size; i++) {
         scanf(" %c", &arr[i]);
     }
 
@@ -45,10 +45,10 @@ int main() {
     scanf("%d", &a);
     switch (a) {
         case 1:
-            insertion(arr, m);
+            insertion(arr, size);
             break;
         case 2:
-            deletion(arr, m);
+            deletion(arr, size);
             break;
         default:
             break;
