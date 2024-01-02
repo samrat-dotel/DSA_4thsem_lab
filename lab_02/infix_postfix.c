@@ -38,7 +38,7 @@ int precedence(char operator) {
     switch (operator) {
         case '^':
             return 3;
-        case '*':
+        case '*':        // why cannot we write these cases as    case '*' || '/':     ?
         case '/':
             return 2;
         case '+':
