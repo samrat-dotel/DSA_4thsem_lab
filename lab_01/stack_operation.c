@@ -62,7 +62,6 @@ int main() {
         scanf("%d", &value);
 
         if (!push(&myStack, value)) {
-            // Handle push error
             printf("Error pushing element #%d into the stack\n", i + 1);
             break;
         }
