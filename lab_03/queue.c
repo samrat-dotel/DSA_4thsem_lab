@@ -20,11 +20,10 @@ void enqueue(char expression){
         exit(1);
     }
 
-    front = 0;
-
     if (isEmpty()){
         front = rear = 0;
     } else {
+        front = 0;
         rear++;
     }
 
