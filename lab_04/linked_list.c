@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>
 
 struct Node {
     int data;
@@ -15,7 +14,7 @@ struct LinkedList {
 
 typedef struct LinkedList List;
 
-bool isEmpty(struct Node* head) {
+int isEmpty(struct Node* head) {
     return (head == NULL);
 }
 
