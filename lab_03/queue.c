@@ -7,7 +7,7 @@ int front = -1, rear = -1;
 char queue[MAX_SIZE];
 
 int isEmpty(){
-    return (front == -1 && rear == -1);
+    return (front == rear == -1);
 }
 
 int isFull(){
