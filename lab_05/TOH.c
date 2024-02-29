@@ -2,6 +2,10 @@
 
 void tower(int n, char begin, char end, char aux)
 {
+    if (n == 0){
+        printf("No disk to move.");
+        return;
+    }
     if (n == 1) 
     {
         printf("Move disk %d from rod %c to rod %c\n", n, begin, end);
